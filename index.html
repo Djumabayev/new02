@@ -7,6 +7,46 @@
                         </script><title>Mustafa в </title><meta property="og:type" content="restaurant.menu_item"/><meta property="og:title" content="Mustafa в "/><meta property="og:url" content="/"/><meta property="og:image"/><meta property="og:description"/><meta name="description"/><meta name="next-head-count" content="12"/><script>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Custom</title>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+
+    <script>
+        // Инициализация Google Translate Widget
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        // Фильтрация языков
+        setTimeout(() => {
+            const menuFrame = document.querySelector('.goog-te-menu-frame');
+            if (menuFrame) {
+                const menu = menuFrame.contentDocument || menuFrame.contentWindow.document;
+                const items = menu.querySelectorAll('.goog-te-menu2-item');
+                items.forEach((item) => {
+                    const text = item.innerText || item.textContent;
+                    // Укажите языки, которые хотите оставить
+                    if (!['English', 'Русский', 'Türkçe', 'O‘zbek', '한국어'].includes(text.trim())) {
+                        item.style.display = 'none'; // Скрыть ненужный язык
+                    }
+                });
+            }
+        }, 2000);
+    </script>
+
+    <!-- Google Translate API -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
 
 
 
@@ -17,6 +57,9 @@
 
 
 
+
+
+                          
                           
   transform: function transformClientSide(e){e?.body?.message?.body?e.fingerprint=e.body.message.body:e?.body?.trace?.exception?.description?e.fingerprint=e.body.trace.exception.description:e?.body?.trace?.exception?.message&&(e.fingerprint=e.body.trace.exception.message)}
 };
