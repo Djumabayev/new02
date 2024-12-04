@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Mustafa menu</title>
+    <title>5Mustafa menu</title>
     <!-- Здесь могут быть другие метатеги и стили -->
 </head>
 <body>
@@ -32,30 +32,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример перехода на якорь</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Категории</h1>
-        <a href="#chai" class="border border-start-0 border-end-0 border-top-0 border-2 text-decoration-none p-3 text-body border-white link-33">Чай</a>
-
-        <hr>
-
-        <h2 id="chai">Чай</h2>
-        <p>Здесь содержится информация о чае...</p>
-
-        <!-- Другие категории и секции -->
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример перехода на категорию</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -63,22 +39,24 @@
     <div class="container">
         <h1>Категории</h1>
         <a href="javascript:void(0);" onclick="scrollToCategory('mangal')" class="border border-start-0 border-end-0 border-top-0 border-2 text-decoration-none p-3 text-body border-white link-16 HorizontalNavigationItem_linkMobile__ia7_l">Мангал</a>
-
+      
         <hr>
 
+        <!-- Другие категории -->
+        
         <h2 id="mangal">Мангал</h2>
         <p>Здесь содержится информация о мангалах...</p>
 
-        <!-- Другие категории и секции -->
+        <!-- Другие секции -->
     </div>
 
     <script>
-        function scrollToCategory(categoryId) {
-            const categoryElement = document.getElementById(categoryId);
-            if (categoryElement) {
-                categoryElement.scrollIntoView({ behavior: 'smooth' });
-            }
+    function scrollToCategory(categoryId) {
+        const categoryElement = document.getElementById(categoryId);
+        if (categoryElement) {
+            categoryElement.scrollIntoView({ behavior: 'smooth' });
         }
+    }
     </script>
 </body>
 </html>
