@@ -1,67 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .content {
-            padding: 20px;
-            height: 2000px; /* Для демонстрации прокрутки */
-        }
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px; /* Отступ от нижней части окна */
-            left: 20px; /* Отступ от левой стороны окна */
-            background-color: red; /* Цвет кнопки */
-            color: white; /* Цвет текста */
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            display: none; /* Скрываем кнопку по умолчанию */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        .scroll-to-top:hover {
-            background-color: darkred; /* Цвет кнопки при наведении */
-        }
-    </style>
-</head>
-<body>
-
-<button class="scroll-to-top" id="scrollToTopBtn">↑</button>
-
-<script>
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    // Показываем кнопку при прокрутке
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.display = "block"; // Показываем кнопку
-        } else {
-            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
-        }
-    };
-
-    // Плавный переход к началу страницы
-    scrollToTopBtn.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавный переход к началу
-    });
-</script>
-
-</body>
-</html>
-
-
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENU</title>
+    <title>1MENU</title>
     <!-- Здесь могут быть другие метатеги и стили -->
 </html>
 </head>
@@ -130,6 +73,71 @@
  </script><script src="./js/index-dbd7d9db8464b259.js" defer=""></script><script src="./js/_buildManifest.js" defer="">
 </script><script src="./js/_ssgManifest.js" defer=""></script>
 
+        <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка Вверх</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            padding: 20px;
+            height: 2000px; /* Для демонстрации прокрутки */
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px; /* Отступ от нижней части окна */
+            left: 20px; /* Отступ от левой стороны окна */
+            background-color: red; /* Цвет кнопки */
+            color: white; /* Цвет текста */
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            display: none; /* Скрываем кнопку по умолчанию */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .scroll-to-top:hover {
+            background-color: darkred; /* Цвет кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <p>Это пример контента. Прокручивайте страницу, чтобы увидеть, как кнопка ведет себя при прокрутке.</p>
+    <p>(Добавьте больше текста, чтобы сделать страницу длиннее и протестировать прокрутку.)</p>
+</div>
+
+<button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+
+<script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Показываем кнопку при прокрутке
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block"; // Показываем кнопку
+        } else {
+            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
+        }
+    };
+
+    // Плавный переход к началу страницы
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавный переход к началу
+    });
+</script>
+
+</body>
+</html>
+
 
 </head><body data-bs-theme="dark">
 <div id="__next"><div class="here-js-scripts"></div><div><div class=""><div class="bg-body"><div class="d-none d-md-block">
@@ -138,7 +146,7 @@
 
     <a class="text-decoration-none text-body d-flex flex-shrink-0" href="/">
       
-        <a span class="fs-4 text-truncate" style="padding-left: 3cm;" href="https://www.instagram.com/mustafa.cafe?igsh=bWVyY29zaHp6Z211" class="text-body" target="_blank">Когда Любов и мастерство соединяются, рождается шедевр в MUSTAFA</a>
+        <a span class="fs-4 text-truncate" style="padding-left: 3cm;" href="https://www.instagram.com/mustafa.cafe?igsh=bWVyY29zaHp6Z211" class="text-body" target="_blank">Когда Любовь и мастерство соединяются, рождается шедевр в MUSTAFA</a>
    </a>
     
     <div class="d-md-none"><div class="container py-3"><div class="d-flex justify-content-between">
