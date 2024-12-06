@@ -1,9 +1,13 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1MENU</title>
+    <title>MENU</title>
     <!-- Здесь могут быть другие метатеги и стили -->
 </html>
 </head>
@@ -28,7 +32,71 @@
     </style>
 </head>
 
-   
+    --------
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSTAFA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            padding: 20px;
+            height: 2000px; /* Для демонстрации прокрутки */
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px; /* Отступ от нижней части окна */
+            right: 20px; /* Отступ от правой части окна */
+            background-color: #007BFF; /* Цвет кнопки */
+            color: white; /* Цвет текста */
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            display: none; /* Скрываем кнопку по умолчанию */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .scroll-to-top:hover {
+            background-color: #0056b3; /* Цвет кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <p>Это пример контента. Прокручивайте страницу, чтобы увидеть, как кнопка ведет себя при прокрутке.</p>
+    <p>(Добавьте больше текста, чтобы сделать страницу длиннее и протестировать прокрутку.)</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius tellus, vel porta urna. Morbi id arcu euismod, cursus odio et, tempor libero.</p>
+</div>
+
+<button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+
+<script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Показываем кнопку при прокрутке
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block"; // Показываем кнопку
+        } else {
+            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
+        }
+    };
+
+    // Плавный переход к началу страницы
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавный переход к началу
+    });
+</script>
+
+----------   
         
 <body>
     <h1>Добро пожаловать в MUSTAFA!</h1>
